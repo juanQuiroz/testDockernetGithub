@@ -8,10 +8,12 @@ EXPOSE 443
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
 COPY ["DockerAuto.csproj", "DockerAuto/"]
-RUN dotnet restore "DockerAuto.csproj"
+RUN dotnet restore "./DockerAuto.csproj"  
 COPY . .
 WORKDIR "/src/DockerAuto/."
 RUN dotnet build "DockerAuto.csproj" -c Release -o /app/build
+
+
 
 FROM build AS publish
 RUN dotnet publish "DockerAuto.csproj" -c Release -o /app/publish
