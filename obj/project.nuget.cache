@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "UMZb57XfsjzIkTkuNS6pIXMSuM48SWn5GBbJ/2C6nlCO6y30CjlxQXOQBc0mj3tsCK9RJmJ8Y2Ucxy9KZ2XVVQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\jaqp_\\source\\repos\\DockerAuto\\DockerAuto\\DockerAuto.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jaqp_\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.14.0\\microsoft.visualstudio.azure.containers.tools.targets.1.14.0.nupkg.sha512"
+  ],
+  "logs": []
+}
