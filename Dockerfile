@@ -11,10 +11,10 @@ COPY ["DockerAuto.csproj", "DockerAuto/"]
 RUN dotnet restore "DockerAuto/DockerAuto.csproj"
 COPY . .
 WORKDIR "/src/DockerAuto"
-RUN dotnet build "DockerAuto.csproj" -c Release -o /app/build
+RUN dotnet build "DockerAuto.csproj" -c Release -o src/app/build
 
 FROM build AS publish
-RUN dotnet publish "DockerAuto.csproj" -c Release -o /app/publish
+RUN dotnet publish "DockerAuto.csproj" -c Release -o src/app/publish
 
 FROM base AS final
 WORKDIR /app
